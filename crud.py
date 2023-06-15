@@ -5,6 +5,10 @@ def add_drink(drink):
 
 def del_drink(drink):
     drinks.remove(drink)
+    try:
+        drinks.remove(drink)
+    except Exception:
+        print("no existe en la lista")    
 
 def show_drinks():
     print("-" * 4, "my drinks", "-" * 4)
